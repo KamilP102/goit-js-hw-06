@@ -1,7 +1,7 @@
 const inputEl = document.querySelector("#validation-input");
 
 const makeChange = () => {
-    if (inputEl.value.length < 6) {
+    if (inputEl.value.length <= 6) {
         inputEl.classList.add("invalid")
         inputEl.classList.remove("valid")
     } else {
